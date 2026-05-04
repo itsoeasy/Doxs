@@ -59,12 +59,15 @@ nav {
 }
 .media {
     grid-column: 1/2;
+    grid-template-rows: auto;
     display: grid;
-}
-.medias {
-    width: 90%;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
     justify-self: center;
-    align-self: center;
+    padding-top: 10em;
+    padding-bottom: 2em;
+    grid-gap: 1em;
 }
 .content {
     grid-column: 2/4;
