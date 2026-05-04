@@ -1,63 +1,117 @@
 body {
-    background-color: black;
-    margin: 0px;
+    margin: 0vh;
+    border: 0vh;
+    background-color: #0f0f0f;
+}
+#container {
+    width: 95vw;
+    height: fit-content;
+    margin: auto;
+    margin-top: 0px;
+    display: grid;
+    background: #1a1a1a; /* near black */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 50px 1fr;
+    /*grid-auto-rows: 1fr;*/
+    grid-gap: 20px;
+    color: #e8e8e8; /* off white text */
 }
 
-.container {
-    border: 0vh solid pink;
-    min-height: 100vh;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
-.sec_0 {
-    color: white;
-    font-family: "Press Start 2P";
-    font-size: 6vh;
-    position: absolute;
-    top: 25vh;
-}
-.sec_1 {
-    position: absolute;
-    top: 10vh;
-    display: flex;
-    align-items: center;
-    gap: 2vh;
-}
-.sec_1 img {
-    width: 10vh;
-    height: 10vh;
-}
-.sec_2 {
-    position: absolute;
-    top: 50vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-
-.sec_2 input {
-    color: black;
-    width: 90vh;
-    height: 4vh;
-    font-size: 3vh;
-    border-radius: 2vh;
-    border: none;
-    padding: 0vh 1vh;
+header {
+    border: 8px solid;
     text-align: center;
+    grid-column: 1/4;
+    height: 190px;
+    justify-content: center;
+    align-content: center;
+    border-color: #2a2a2a; /* dark grey borders */
+}
+.heading1 {
+    font-size: 6em;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold";
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+nav {
+    border: 8px solid;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-around;
+    border-color: #2a2a2a; /* dark grey borders */
+}
+.home,
+.donation,
+.contact {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #7c3aed;
 }
 
-.sec_3 {
-    color: black;
-    position: absolute;
-    bottom: 10vh;
-    font-size: 3vh;
+#blocks {
+    border: 8px solid;
+    grid-column: 1/4;
+    border-color: #2a2a2a; /* dark grey borders */
 }
-#wallahi {
-    color: powderblue;
+.block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 4px;
+    border-bottom: 8px solid;
+    border-color: #2a2a2a; /* dark grey borders */
+}
+.block:last-child {
+    border-bottom: none;
+}
+.media {
+    grid-column: 1/2;
+    grid-template-rows: auto;
+    display: grid;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: center;
+    padding-top: 9em;
+    padding-bottom: 4em;
+    grid-gap: 1em;
+}
+
+.video {
+    width: 400px;
+    height: 250px;
+}
+.images {
+    width: 400px;
+    height: 250px;
+}
+.res {
+    color: #7c3aed;
+    font-size: 25px;
+}
+.content {
+    grid-column: 2/4;
+}
+.chead {
+    font-size: 3em;
+    justify-self: center;
+    align-self: center;
+    padding: 1em 1em 0em 1em;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.c2head {
+    font-size: 2em;
+    padding: 1em 1em 0em 1em;
+    margin: 0px;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+.cpara {
+    font-size: 31px;
+    justify-self: center;
+    align-self: center;
+    padding: 1em 1em 1em 1em;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
