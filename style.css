@@ -69,6 +69,14 @@ nav {
     padding-bottom: 2em;
     grid-gap: 1em;
 }
+.video {
+    width: 400px;
+    height: 250px;
+}
+.images {
+    width: 400px;
+    height: 250px;
+}
 .content {
     grid-column: 2/4;
 }
